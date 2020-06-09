@@ -63,7 +63,7 @@ def main():
 
 		# Add the prompt at the beginning of the sequence. Remove the excess text that was used for pre-processing
 		total_sequence = (
-			prompt_text + text[len(tokenizer.decode(encoded_prompt[0], clean_up_tokenization_spaces=True)) :]
+			PROMPT + text[len(tokenizer.decode(encoded_prompt[0], clean_up_tokenization_spaces=True)) :]
 		)
 
 		generated_sequences.append(total_sequence)
