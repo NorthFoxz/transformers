@@ -17,7 +17,7 @@
 """ Conditional text generation with the auto-regressive models of the library (GPT/GPT-2/CTRL/Transformer-XL/XLNet)
 """
 
-
+import GPUtil
 import argparse
 import logging
 
