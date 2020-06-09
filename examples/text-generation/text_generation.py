@@ -13,7 +13,7 @@ TEMPERATURE = 0.9
 TOP_K = 0
 TOP_P = 0.9
 SEED = 41
-NUM_RETURN_SEQUENCES = 20
+NUM_RETURN_SEQUENCES = 1
 MODEL_PATH = "gpt2-xl"
 
 def set_seed(seed):
