@@ -23,7 +23,7 @@ def set_seed(seed):
 
 
 def main():
-	device = torch.device("cuda" if torch.cuda.is_available() and not args.no_cuda else "cpu")
+	device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 	tokenizer = GPT2Tokenizer.from_pretrained()
 	model = GPT2LMHeadModel.from_pretrained(MODEL_PATH)
