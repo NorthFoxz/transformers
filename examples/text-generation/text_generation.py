@@ -51,6 +51,8 @@ def main():
 	if len(output_sequences.shape) > 2:
 		output_sequences.squeeze_()
 
+	generated_sequences = []
+
 	for generated_sequence_idx, generated_sequence in enumerate(output_sequences):
 		print("=== GENERATED SEQUENCE {} ===".format(generated_sequence_idx + 1))
 		generated_sequence = generated_sequence.tolist()
